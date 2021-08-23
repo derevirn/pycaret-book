@@ -1,17 +1,18 @@
 import numpy as np
+import os
 import pandas as pd
 import streamlit as st
 from pycaret.regression import load_model, predict_model
 
-@st.cache
-def model_cache():
+@st.cache(allow_output_mutation=True)
+def get_model():
     return load_model('regression_model')
 
 def predict(model, df):
     predictions = predict_model(model, data = df)
     return predictions['Label'][0]
 
-#model = model_cache()
+model = get_model()
 
 st.title("Insurance Charges Prediction App")
 
@@ -38,3 +39,7 @@ input_df = pd.DataFrame([input_dict])
 if predict_button:
     out = predict(model, input_df)
     st.success('The predicted charges are ${:.2f}'.format(out))
+    
+files = [f for f in os.listdir('.') if os.path.isfile(f)]
+for file in files:
+    print(file)
