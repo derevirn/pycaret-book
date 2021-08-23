@@ -1,3 +1,1 @@
-numpy==1.20.3
-streamlit==0.87.0
-pycaret==2.3.0
+pycaret
