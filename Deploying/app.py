@@ -40,6 +40,4 @@ if predict_button:
     out = predict(model, input_df)
     st.success('The predicted charges are ${:.2f}'.format(out))
     
-files = [f for f in os.listdir('.') if os.path.isfile(f)]
-for file in files:
-    print(file)
+print(os.getcwd())
