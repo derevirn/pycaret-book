@@ -1,5 +1,4 @@
 import numpy as np
-import os
 import pandas as pd
 import streamlit as st
 from pycaret.regression import load_model, predict_model
@@ -39,5 +38,3 @@ input_df = pd.DataFrame([input_dict])
 if predict_button:
     out = predict(model, input_df)
     st.success('The predicted charges are ${:.2f}'.format(out))
-    
-print(os.getcwd())
