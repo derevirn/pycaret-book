@@ -12,7 +12,7 @@ def predict(model, df):
     predictions = predict_model(model, data = df)
     return predictions['Label'][0]
 
-#model = get_model()
+model = get_model()
 
 st.title("Insurance Charges Prediction App")
 
