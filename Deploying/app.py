@@ -1,6 +1,7 @@
-from pycaret.regression import load_model, predict_model
-import streamlit as st
+import numpy as np
 import pandas as pd
+import streamlit as st
+from pycaret.regression import load_model, predict_model
 
 def predict(model, df):
     predictions = predict_model(model, data = df)

@@ -1,2 +1,2 @@
 pycaret
-streamlit==0.77
+streamlit
