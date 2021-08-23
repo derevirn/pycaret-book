@@ -3,11 +3,15 @@ import pandas as pd
 import streamlit as st
 from pycaret.regression import load_model, predict_model
 
+@st.cache
+def model_cache():
+    return load_model('regression_model')
+
 def predict(model, df):
     predictions = predict_model(model, data = df)
     return predictions['Label'][0]
 
-model = load_model('regression_model')
+model = model_cache()
 
 st.title("Insurance Charges Prediction App")
 
