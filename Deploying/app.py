@@ -11,7 +11,7 @@ def predict(model, df):
     predictions = predict_model(model, data = df)
     return predictions['Label'][0]
 
-model = model_cache()
+#model = model_cache()
 
 st.title("Insurance Charges Prediction App")
 
