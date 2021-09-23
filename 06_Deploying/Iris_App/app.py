@@ -23,7 +23,6 @@ st.markdown("Choose the values for each attribute of the Iris plant that you wan
         (https://leanpub.com/pycaretbook/) book website.")
 
 form = st.form("species")
-#bmi = form.number_input('BMI', min_value=10.0, max_value=50.0, value=20.0)
 sepal_length = form.slider('Sepal Length', min_value=0.0, max_value=10.0, 
                            value=0.0, step = 0.1, format = '%f')
 sepal_width = form.slider('Sepal Width', min_value=0.0, max_value=10.0,
