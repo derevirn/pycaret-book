@@ -16,9 +16,9 @@ model = get_model()
 
 
 st.title("Iris Classification App")
-st.markdown("Choose the values for each attribute of the Iris plant that you want to\
-        be classified. This is a simple app showcasing the abilities of the\
-        PyCaret classification module, based on Streamlit. For more\
+st.markdown("Choose the values for each attribute of the Iris plant that you\
+        want to be classified. This is a simple app showcasing the abilities\
+        of the PyCaret classification module, based on Streamlit. For more\
         information visit the [Simplifying Machine Learning with PyCaret]\
         (https://leanpub.com/pycaretbook/) book website.")
 
