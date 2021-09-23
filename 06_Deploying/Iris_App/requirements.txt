@@ -1,2 +1,1 @@
-pycaret==2.3.3
-streamlit
+pycaret==2.3.4

@@ -1,3 +1,1 @@
-pycaret==2.3.3
-streamlit
-numpy
+pycaret==2.3.4
