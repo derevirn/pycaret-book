@@ -10,7 +10,7 @@ def get_model():
 
 def predict(model, df):
     predictions = predict_model(model, data = df)
-    return predictions['Label'][0]
+    return predictions['prediction_label'][0]
 
 model = get_model()
 
