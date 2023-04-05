@@ -131,3 +131,6 @@ dmypy.json
 catboost_info
 *.pkl
 *.md
+
+!/08_Deploying/Iris_App/classification_model.pkl
+!/08_Deploying/Insurance_App/regression_model.pkl
